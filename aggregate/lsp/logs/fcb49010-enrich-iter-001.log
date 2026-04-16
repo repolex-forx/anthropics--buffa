@@ -1,0 +1,86 @@
+[2026-04-16T05:42:13Z] === ENRICH ITERATION 1 START | repo=anthropics/buffa sha=fcb49010 ===
+[2026-04-16T05:42:13Z] [iter=1] PHASE START: enrich repo=anthropics/buffa sha=fcb49010 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/fcb49010-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/fcb490109f9b76746815f0534211856bf2d7baf0.nq.gz
+[2026-04-16T05:42:13Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-16T05:42:36Z] [iter=1] AST store loaded triples=2727383 load_secs=22 mem_mb=937 MB
+[2026-04-16T05:42:36Z] [iter=1] Step 2: Finding LSP targets mem_mb=937 MB
+[2026-04-16T05:42:41Z] [iter=1] LSP targets found call_sites=23348 imports=432 extends=0 implements=212 secs=5
+[2026-04-16T05:42:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=937 MB
+[2026-04-16T05:43:00Z] [iter=1] Position index built positions=183313 nodes_with_types=230802 secs=15 mem_mb=937 MB
+[2026-04-16T05:43:00Z] [iter=1] Step 3: Starting LSP resolution mem_mb=937 MB already_completed_types=[] already_completed_files=0
+[2026-04-16T05:43:00Z] [iter=1] Resolving target type target_type=call_site count=23348
+[2026-04-16T05:43:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=buffa-codegen/src/context.rs
+[2026-04-16T05:47:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=1 resolved=231 errors=221 current=buffa-descriptor/src/generated/google.protobuf.descriptor.rs
+[2026-04-16T05:55:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.7 files_done=3 resolved=398 errors=645 current=buffa/src/text/token.rs
+[2026-04-16T05:59:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.1 files_done=4 resolved=616 errors=819 current=buffa/src/text/decoder.rs
+[2026-04-16T06:03:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.2 files_done=5 resolved=864 errors=1036 current=buffa-codegen/src/comments.rs
+[2026-04-16T06:07:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=6 resolved=979 errors=1264 current=buffa-codegen/src/impl_message.rs
+[2026-04-16T06:14:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.2 files_done=7 resolved=1365 errors=1595 current=buffa-types/src/generated/google.protobuf.struct.rs
+[2026-04-16T06:17:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.5 files_done=9 resolved=1498 errors=1770 current=buffa/src/encoding.rs
+[2026-04-16T06:21:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.6 files_done=10 resolved=1626 errors=1983 current=buffa/src/text/string.rs
+[2026-04-16T06:23:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.4 files_done=11 resolved=1689 errors=2078 current=buffa-codegen/src/extension.rs
+[2026-04-16T06:27:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.4 files_done=12 resolved=1906 errors=2285 current=buffa/src/unknown_fields.rs
+[2026-04-16T06:29:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.6 files_done=13 resolved=1949 errors=2403 current=buffa-test/src/tests/editions_2024.rs
+[2026-04-16T06:32:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.3 files_done=15 resolved=2036 errors=2542 current=buffa/src/enumeration.rs
+[2026-04-16T06:33:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.3 files_done=16 resolved=2108 errors=2595 current=buffa/src/extension_registry.rs
+[2026-04-16T06:39:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.1 files_done=17 resolved=2333 errors=2895 current=buffa-test/src/tests/cross_ref.rs
+[2026-04-16T06:40:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.9 files_done=19 resolved=2424 errors=2938 current=buffa-codegen/src/tests/naming.rs
+[2026-04-16T06:41:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.8 files_done=20 resolved=2505 errors=2986 current=buffa-test/src/tests/nesting.rs
+[2026-04-16T06:41:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=21 resolved=2613 errors=3028 current=buffa/src/types.rs
+[2026-04-16T06:47:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.2 files_done=22 resolved=2889 errors=3319 current=buffa-codegen/src/tests/json_codegen.rs
+[2026-04-16T06:48:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.4 files_done=23 resolved=2978 errors=3385 current=buffa/src/text/encoder.rs
+[2026-04-16T06:51:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.8 files_done=24 resolved=3072 errors=3511 current=buffa-test/src/tests/closed_enum.rs
+[2026-04-16T06:52:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.4 files_done=25 resolved=3121 errors=3594 current=buffa-test/src/tests/view.rs
+[2026-04-16T06:53:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.6 files_done=26 resolved=3183 errors=3661 current=buffa-codegen/src/message.rs
+[2026-04-16T06:59:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.4 files_done=27 resolved=3407 errors=3962 current=buffa-codegen/src/features.rs
+[2026-04-16T07:01:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.0 files_done=28 resolved=3495 errors=4046 current=buffa-codegen/src/oneof.rs
+[2026-04-16T07:02:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.4 files_done=29 resolved=3572 errors=4123 current=buffa/src/json_helpers/tests.rs
+[2026-04-16T07:04:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.6 files_done=30 resolved=4055 errors=4234 current=examples/logging/src/gen/log.v1.log.rs
+[2026-04-16T07:08:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.0 files_done=33 resolved=4200 errors=4411 current=benchmarks/prost/benches/protobuf.rs
+[2026-04-16T07:11:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.9 files_done=37 resolved=4356 errors=4565 current=buffa/src/view.rs
+[2026-04-16T07:15:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.0 files_done=38 resolved=4522 errors=4777 current=benchmarks/buffa/benches/protobuf.rs
+[2026-04-16T07:16:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.3 files_done=40 resolved=4601 errors=4842 current=buffa-types/src/wrapper_ext.rs
+[2026-04-16T07:17:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.5 files_done=41 resolved=4686 errors=4907 current=benchmarks/google/benches/protobuf.rs
+[2026-04-16T07:19:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.9 files_done=44 resolved=4930 errors=4978 current=buffa-build/src/lib.rs
+[2026-04-16T07:21:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.2 files_done=45 resolved=5071 errors=5100 current=buffa-codegen/src/tests/generation.rs
+[2026-04-16T07:24:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.0 files_done=46 resolved=5298 errors=5246 current=buffa-types/src/timestamp_ext.rs
+[2026-04-16T07:26:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.8 files_done=47 resolved=5450 errors=5343 current=examples/logging/src/main.rs
+[2026-04-16T07:26:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.4 files_done=50 resolved=5506 errors=5370 current=buffa-test/src/tests/textproto.rs
+[2026-04-16T07:27:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.7 files_done=51 resolved=5582 errors=5441 current=buffa-codegen/src/impl_text.rs
+[2026-04-16T07:31:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.7 files_done=52 resolved=5764 errors=5651 current=buffa-types/src/generated/google.protobuf.wrappers.rs
+[2026-04-16T07:32:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.3 files_done=54 resolved=5904 errors=5684 current=buffa-test/src/tests/extensions_json.rs
+[2026-04-16T07:33:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.9 files_done=55 resolved=5963 errors=5714 current=buffa-codegen/src/defaults.rs
+[2026-04-16T07:34:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.3 files_done=56 resolved=6033 errors=5787 current=buffa/src/message.rs
+[2026-04-16T07:40:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.7 files_done=57 resolved=6203 errors=6128 current=buffa-types/src/duration_ext.rs
+[2026-04-16T07:42:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.0 files_done=58 resolved=6346 errors=6196 current=buffa-types/src/generated/google.protobuf.any.rs
+[2026-04-16T07:43:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.1 files_done=62 resolved=6435 errors=6251 current=buffa-test/src/tests/basic.rs
+[2026-04-16T07:44:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.9 files_done=63 resolved=6489 errors=6292 current=buffa/src/any_registry.rs
+[2026-04-16T07:45:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.8 files_done=64 resolved=6518 errors=6342 current=protoc-gen-buffa-packaging/src/main.rs
+[2026-04-16T07:46:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.1 files_done=65 resolved=6572 errors=6407 current=buffa-test/src/tests/bytes_type.rs
+[2026-04-16T07:47:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.8 files_done=68 resolved=6832 errors=6493 current=buffa-codegen/src/lib.rs
+[2026-04-16T07:50:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.4 files_done=69 resolved=6891 errors=6633 current=buffa/src/json_helpers.rs
+[2026-04-16T07:55:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.6 files_done=70 resolved=7018 errors=6906 current=buffa-types/tests/wkt_roundtrip.rs
+[2026-04-16T07:56:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.7 files_done=71 resolved=7065 errors=6962 current=buffa-test/src/tests/edge_cases.rs
+[2026-04-16T07:57:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.5 files_done=72 resolved=7197 errors=7004 current=buffa-codegen/src/view.rs
+[2026-04-16T08:03:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.2 files_done=73 resolved=7433 errors=7305 current=examples/envelope/src/main.rs
+[2026-04-16T08:03:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.7 files_done=75 resolved=7459 errors=7331 current=buffa-types/src/lib.rs
+[2026-04-16T08:06:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.0 files_done=77 resolved=7506 errors=7451 current=buffa-codegen/src/tests/view_codegen.rs
+[2026-04-16T08:07:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.6 files_done=79 resolved=7585 errors=7536 current=buffa-codegen/src/tests/proto2.rs
+[2026-04-16T08:08:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.2 files_done=80 resolved=7615 errors=7565 current=buffa-codegen/src/imports.rs
+[2026-04-16T08:09:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.9 files_done=83 resolved=7698 errors=7606 current=buffa-test/build.rs
+[2026-04-16T08:11:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.4 files_done=84 resolved=7713 errors=7741 current=buffa-test/src/tests/any_type_url.rs
+[2026-04-16T08:12:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.1 files_done=87 resolved=7757 errors=7778 current=buffa-test/src/lib.rs
+[2026-04-16T08:13:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.0 files_done=93 resolved=7848 errors=7825 current=buffa-types/src/generated/google.protobuf.field_mask.rs
+[2026-04-16T08:13:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.7 files_done=97 resolved=7892 errors=7862 current=fuzz/fuzzers/wkt_json_strings.rs
+[2026-04-16T08:14:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.2 files_done=113 resolved=7936 errors=7886 current=buffa/src/lib.rs
+[2026-04-16T08:16:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.2 files_done=126 resolved=8006 errors=7992 current=stress/googleapis/gen_lib_rs.py
+[2026-04-16T08:17:52Z] [iter=1] Target type resolved target_type=call_site resolved=8036 errors=8063 secs=9291 mem_mb=937 MB
+[2026-04-16T08:17:52Z] [iter=1] Resolving target type target_type=import_statement count=432
+[2026-04-16T08:17:59Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=155.8 files_done=0 resolved=0 errors=0 current=buffa-codegen/src/comments.rs
+[2026-04-16T08:18:30Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=156.3 files_done=55 resolved=308 errors=0 current=buffa/src/message_set.rs
+[2026-04-16T08:18:41Z] [iter=1] Target type resolved target_type=import_statement resolved=380 errors=0 secs=49 mem_mb=937 MB
+[2026-04-16T08:18:41Z] [iter=1] Resolving target type target_type=implements_clause count=212
+[2026-04-16T08:19:01Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=156.8 files_done=7 resolved=136 errors=0 current=buffa-types/src/wrapper_ext.rs
+[2026-04-16T08:19:05Z] [iter=1] Target type resolved target_type=implements_clause resolved=203 errors=0 secs=24 mem_mb=937 MB
+[2026-04-16T08:19:41Z] [iter=1] Step 5: Writing final enrichment file triples=147861
+[2026-04-16T08:19:44Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/fcb490109f9b76746815f0534211856bf2d7baf0.nq.gz size_kb=3175
+[2026-04-16T08:19:44Z] [iter=1] PHASE END: enrich elapsed_s=9452 elapsed_min=157.5 total_triples=147861
